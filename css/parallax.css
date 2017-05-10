@@ -1,0 +1,194 @@
+* {
+    /*border: red solid 1px;*/
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
+}
+
+h1,h2 {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after:0px;
+}
+
+#top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  background-color: slategrey;
+  opacity: 0.9;
+  color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+ul#contact {
+    font-size: 20px;
+}
+
+a {
+    color:white;
+}
+
+li {
+    display:inline;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#name {
+    float: left;
+}
+
+#contact {
+    margin-bottom: -20px;
+    /*height: 200px;*/
+}
+
+#contact > li > a {
+    padding-top: 40px;
+}
+
+
+div > h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+
+/* ============================================================
+  PRIMARY STRUCTURE FOR PARALLAX
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS FOR PARALLAX
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: -0px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 15px;
+}
+section.module p {
+  margin-bottom: 0px;
+  font-size: 1em;
+  font-weight: 300;
+  margin-left: 100px;
+  margin-right: 100px;
+padding-bottom: 15px;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  min-height: 100px;
+  height:100vh;
+
+  /*padding: 40px 0;*/
+  background-color: rgb(217, 217, 217);
+
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 72px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+section.module.parallax-0 {
+  background-image: url("../images/jukebox_resized.jpg");
+}
+
+section.module.parallax-1 {
+  background-image: url("../images/cph_chimneys_resized.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../images/grossingers_resized.jpg");
+  /*margin-top: -100px;*/
+}
+section.module.parallax-3 {
+  background-image: url("../images/cph_colors_resized.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("../images/fog_resized.jpg");
+}
+
+@media only screen and (min-width: 400px) {
+
+section.module.content {
+
+  /*padding: 40px 0;*/
+  background-color: rgb(217, 217, 217);
+    height:100vh;
+
+
+}
+    
+    
+  section.module h2 {
+    font-size: 30px;
+    
+  }
+  section.module p {
+    /*font-size: 20px;*/
+    line-height: 90%;
+  }
+  section.module.parallax h1 {
+    font-size: 80px;
+    line-height: 100px;
+    padding-top: 150px;
+      
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 80px;
+  }
+}
