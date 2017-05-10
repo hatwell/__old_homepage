@@ -1,0 +1,49 @@
+
+
+.circle{
+    /*background-color: grey;*/
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    align-self: center;
+    border: solid black 1px;
+}
+
+.circle:hover {
+    background-color: white;
+}
+
+
+
+.container {
+    text-align: center;
+    
+}
+
+.red:hover {
+    background-color: darkred;
+}
+
+.orange:hover  {
+    background-color: darkorange;
+}
+
+.yellow:hover  {
+    background-color: gold;
+}
+
+.green:hover  {
+    background-color: forestgreen;
+}
+
+.blue:hover {
+    background-color: dodgerblue;
+}
+
+.indigo:hover  {
+    background-color: indigo;
+}
+
+.violet:hover  {
+    background-color: darkviolet;
+}
